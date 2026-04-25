@@ -14,6 +14,27 @@ Return Rate: 3.37%
 
 Cancellation Rate: 2.72%
 
+
+## Key DAX Measures
+
+To generate the insights for the **E-Commerce Sales Performance Dashboard**, I developed the following custom DAX measures:
+
+*   **Total Sales:** Calculates revenue by iterating through each row of the store data.
+    ```dax
+    Sale = SUMX('VAStra Store', 'VAStra Store'[Qty] * 'VAStra Store'[Amount])
+    ```
+    
+*   **Total Orders:** Standard count of unique order identifiers.
+    ```dax
+    Total Order = COUNT('VAStra Store'[Order ID])
+    ```
+
+*   **Returned Orders:** Specifically counts orders where the status is marked as "Returned."
+    ```dax
+    Returned Order = CALCULATE(COUNT('VAStra Store'[Order ID]), 'VAStra Store'[Status] = "Returned")
+    ```
+
+
 # Dashboard Insights
 The dashboard is divided into five critical areas of analysis:
 
