@@ -1,5 +1,7 @@
 <img width="1310" height="728" alt="image" src="https://github.com/user-attachments/assets/60a944b1-5866-48e4-a92c-bd2eec11f850" />
+
 # E-Commerce Sales Performance Dashboard
+
 Project Overview
 This Power BI project provides a comprehensive analysis of e-commerce sales performance over a 12-month period. The goal was to identify key drivers of revenue, understand customer demographics, and evaluate the efficiency of various sales channels to support data-driven business strategies.
 
